@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+          <img
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care.svg"
+            alt="logo"
+            width="210"
+            height="29"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <a href="" class="cs-li-link cs-active"> Home </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> About </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="cs-contact-group">
+          <a href="tel:+84 1985 33 999" class="cs-phone">
+            <img
+              class="cs-phone-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg"
+              alt="logo"
+              width="24"
+              height="24"
+              aria-hidden="true"
+              decoding="async"
+            />
+            +84 1985 33 999
+          </a>
+          <div class="cs-social">
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-1619">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">
+            <svg
+              class="cs-chevron"
+              width="49"
+              height="15"
+              viewBox="0 0 49 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.7">
+                <path
+                  d="M0.621948 7.49889L6.40262 15L10.343 15L4.56231 7.49889L10.343 -4.2492e-07L6.40262 -2.52681e-07L0.621948 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+                <path
+                  d="M7.62195 7.49889L13.4026 15L17.343 15L11.5623 7.49889L17.343 -4.2492e-07L13.4026 -2.52681e-07L7.62195 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+                <path
+                  d="M14.7789 7.49889L20.5596 15L24.5 15L18.7193 7.49889L24.5 -4.2492e-07L20.5596 -2.52681e-07L14.7789 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+                <path
+                  d="M22.7789 7.49889L28.5596 15L32.5 15L26.7193 7.49889L32.5 -4.2492e-07L28.5596 -2.52681e-07L22.7789 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+                <path
+                  d="M30.7789 7.49889L36.5596 15L40.5 15L34.7193 7.49889L40.5 -4.2492e-07L36.5596 -2.52681e-07L30.7789 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+                <path
+                  d="M38.7789 7.49889L44.5596 15L48.5 15L42.7193 7.49889L48.5 -4.2492e-07L44.5596 -2.52681e-07L38.7789 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+              </g>
+            </svg>
+            Plan for A secure future
+            <svg
+              class="cs-chevron"
+              width="49"
+              height="15"
+              viewBox="0 0 49 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.7">
+                <path
+                  d="M48.3781 7.49889L42.5974 15L38.657 15L44.4377 7.49889L38.657 -4.2492e-07L42.5974 -2.52681e-07L48.3781 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+                <path
+                  d="M41.3781 7.49889L35.5974 15L31.657 15L37.4377 7.49889L31.657 -4.2492e-07L35.5974 -2.52681e-07L41.3781 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+                <path
+                  d="M34.2211 7.49889L28.4404 15L24.5 15L30.2807 7.49889L24.5 -4.2492e-07L28.4404 -2.52681e-07L34.2211 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+                <path
+                  d="M26.2211 7.49889L20.4404 15L16.5 15L22.2807 7.49889L16.5 -4.2492e-07L20.4404 -2.52681e-07L26.2211 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+                <path
+                  d="M18.2211 7.49889L12.4404 15L8.50004 15L14.2807 7.49889L8.50004 -4.2492e-07L12.4404 -2.52681e-07L18.2211 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+                <path
+                  d="M10.2211 7.49889L4.4404 15L0.500041 15L6.28071 7.49889L0.500042 -4.2492e-07L4.4404 -2.52681e-07L10.2211 7.49889Z"
+                  fill="var(--chevronColor)"
+                />
+              </g>
+            </svg>
+          </span>
+          <h1 class="cs-title">
+            Elevate Your Performance With Our Leading-Edge Consulting Solutions
+          </h1>
+          <a href="" class="cs-button-solid">Request Appointment</a>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <img
+              class="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg"
+              alt="icon"
+              width="48"
+              height="48"
+            />
+            <h3 class="cs-h3">100% Success Rate</h3>
+            <p class="cs-item-text">
+              We provide some of the finest quality, most responsive and
+              reliable, and cost effective services and solutions.
+            </p>
+          </li>
+          <li class="cs-item">
+            <img
+              class="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/speedometer.svg"
+              alt="icon"
+              width="48"
+              height="48"
+            />
+            <h3 class="cs-h3">Expert Legal Services</h3>
+            <p class="cs-item-text">
+              We provide some of the finest quality, most responsive and
+              reliable, and cost effective services and solutions.
+            </p>
+          </li>
+          <li class="cs-item">
+            <img
+              class="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg"
+              alt="icon"
+              width="48"
+              height="48"
+            />
+            <h3 class="cs-h3">Highly Recommend</h3>
+            <p class="cs-item-text">
+              We provide some of the finest quality, most responsive and
+              reliable, and cost effective services and solutions.
+            </p>
+          </li>
+          <li class="cs-item">
+            <img
+              class="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg"
+              alt="icon"
+              width="48"
+              height="48"
+            />
+            <h3 class="cs-h3">Highly Recommend</h3>
+            <p class="cs-item-text">
+              We provide some of the finest quality, most responsive and
+              reliable, and cost effective services and solutions.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7-m.jpeg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg
+          "
+        />
+        <img
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg"
+          alt="meeting"
+          width="2250"
+          height="1500"
+          aria-hidden="true"
+        />
+      </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Side By Side                  -->
+    <!-- ============================================ -->
+
+    <section id="sbs-1073">
+      <div class="cs-container">
+        <div class="cs-image-group">
+          <!--Top left image-->
+          <picture class="cs-picture cs-picture1">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic4.jpg
+              "
+            />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic4.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic4.jpg"
+              alt="mechanic"
+              width="217"
+              height="440"
+            />
+          </picture>
+          <!--Middle image-->
+          <picture class="cs-picture cs-picture2">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic5.jpg
+              "
+            />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic5.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic5.jpg"
+              alt="mechanic"
+              width="305"
+              height="600"
+            />
+          </picture>
+          <!--Bottom right image-->
+          <picture class="cs-picture cs-picture3">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic6.jpg
+              "
+            />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic6.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic6.jpg"
+              alt="mechanic"
+              width="216"
+              height="440"
+            />
+          </picture>
+          <!--Stripe background-->
+          <img
+            class="cs-stripes"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes.svg"
+            alt="stripes"
+            width="509"
+            height="535"
+            aria-hidden="true"
+          />
+        </div>
+        <div class="cs-content">
+          <span class="cs-topper">Why Choose Us</span>
+          <h2 class="cs-title">Safety is Our First & Main Priority</h2>
+          <p class="cs-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            possimus accusantium quod voluptatum mollitia unde pariatur nam
+            ipsum provident blanditiis.
+          </p>
+          <ul class="cs-list">
+            <li class="cs-li">We handle all makes and models</li>
+            <li class="cs-li">
+              We are endorsed by the local trading standards office
+            </li>
+            <li class="cs-li">
+              All our technicians are equipped with the latest portable
+            </li>
+            <li class="cs-li">
+              Proven results for setting exceptional standards
+            </li>
+            <li class="cs-li">Same day service for most repairs</li>
+          </ul>
+          <a class="cs-link" href="tel:555-555-0234">
+            <picture class="cs-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-phone.svg"
+                alt="icon"
+                width="24"
+                height="24"
+              />
+            </picture>
+            <div class="cs-info">
+              <span class="cs-header">Call Anytime</span>
+              <span class="cs-link-content">(+123) 5462 3257</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+<!--                   Pricing                    -->
+<!-- ============================================ -->
+
+<section id="pricing-701">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Pricing</span>
+          <h2 class="cs-title">Simple & Transparent Pricing</h2>
+          <p class="cs-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          </p>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <span class="cs-package">Basic</span>
+              <span class="cs-price">$49.99</span>
+              <span class="cs-desc">Per Month</span>
+              <p class="cs-item-p">
+                  Basic features for up to 10 services
+              </p>
+              <ul class="cs-ul">
+                  <li class="cs-li">
+                      All available starter feature
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      Medical service 24/7
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      Customer agent service
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      Professional Service
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li cs-disabled">
+                      2 dedicated experts
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li cs-disabled">
+                      Consultation with a Senior experts
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+              </ul>
+              <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+          </li>
+          <li class="cs-item cs-popular">
+              <span class="cs-package">Basic</span>
+              <span class="cs-price">$49.99</span>
+              <span class="cs-desc">Per Month</span>
+              <p class="cs-item-p">
+                  Basic features for up to 10 services
+              </p>
+              <ul class="cs-ul">
+                  <li class="cs-li">
+                      All available starter feature
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      Medical service 24/7
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      Customer agent service
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      Professional Service
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      2 dedicated experts
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li cs-disabled">
+                      Consultation with a Senior experts
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+              </ul>
+              <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+          </li>
+          <li class="cs-item">
+              <span class="cs-package">Basic</span>
+              <span class="cs-price">$49.99</span>
+              <span class="cs-desc">Per Month</span>
+              <p class="cs-item-p">
+                  Basic features for up to 10 services
+              </p>
+              <ul class="cs-ul">
+                  <li class="cs-li">
+                      All available starter feature
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      Medical service 24/7
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      Customer agent service
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      Professional Service
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      2 dedicated experts
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+                  <li class="cs-li">
+                      Consultation with a Senior experts
+                      <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcheck.svg" alt="checkmark" width="18" height="18">
+                  </li>
+              </ul>
+              <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+          </li>
+      </ul>
+  </div>
+</section>
+                              
+
+<!-- ============================================ -->
+<!--                    CTA                       -->
+<!-- ============================================ -->
+
+<section id="cta-403">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Our Portfolio</span>
+          <h2 class="cs-title">Want to Work with Our Team?</h2>
+          <p class="cs-text">
+              We love what we do and we do it with passion. We value the experimentation of the message and smart incentives.
+          </p>
+          <a href="" class="cs-button-solid">Read More</a>
+      </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+      <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cleaning2-m.jpg">
+      <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cleaning2.jpg">
+      <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cleaning2.jpg" alt="cleaner" width="1920" height="660" aria-hidden="true">
+  </picture>
+</section>
+                              
+
+
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+<footer id="footer-1390">
+  <div class="cs-container">
+      <div class="cs-top">
+          <a aria-label="go back to home" class="cs-logo" href="">
+              <img class="cs-logo-img" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/agency-logo.svg" alt="logo" width="209" height="40">
+          </a>
+          <ul class="cs-ul">
+              <li class="cs-li">
+                  <a href="" class="cs-link">Home</a>
+              </li>
+              <li class="cs-li">
+                  <a href="" class="cs-link">About</a>
+              </li>
+              <li class="cs-li">
+                  <a href="" class="cs-link">Services</a>
+              </li>
+              <li class="cs-li">
+                  <a href="" class="cs-link">Blog</a>
+              </li>
+              <li class="cs-li">
+                  <a href="" class="cs-link">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <div class="cs-bottom">
+          <!--Social-->
+          <ul class="cs-social">
+              <li class="cs-social-li">
+                  <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                      <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                  </a>
+              </li>
+              <li class="cs-social-li">
+                  <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                      <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                  </a>
+              </li>
+              <li class="cs-social-li">
+                  <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                      <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                  </a>
+              </li>
+              <li class="cs-social-li">
+                  <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                      <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                  </a>
+              </li>
+          </ul>
+          <span class="cs-copyright">
+              © Copyright 2023 - <a href="" class="cs-copyright-link">Stitch Agency</a>
+          </span>
+          <div class="cs-flex">
+              <a href="" class="cs-copyright-link">Privacy Policy</a>
+              <span class="cs-separater">|</span>
+              <a href="" class="cs-copyright-link">Terms of Use</a>
+          </div>
+      </div>
+  </div>
+</footer>
+                              
+  </body>
+</html>
