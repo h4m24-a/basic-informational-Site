@@ -42,7 +42,7 @@ const server = createServer(async (req, res) => {
         res.setHeader("Content-Type", "text/HTML");
       }
       const data = await fs.readFile(filePath);
-      res.write(data);
+      res.write(data);  // Holds the file data
       res.end();
     } else {
       throw new Error("Method not allowed");
