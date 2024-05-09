@@ -15,9 +15,9 @@ const server = createServer(async (req, res) => {
       let filePath; // filePath variable is used to determine the path of the file that needs to be served based on the URL requested by the client (req.url).
       if (req.url === "/") {
         filePath = path.join(__dirname, "index.html"); // specifiy file path using join method of path module - current directory, enter public folder, load index.html
-      } else if (req.url === "/about") {
+      } else if (req.url === "/about.html") {
         filePath = path.join(__dirname, "about.html");
-      } else if (req.url === "/contact-me") {
+      } else if (req.url === "/contact-me.html") {
         filePath = path.join(__dirname, "contact-me.html");
       } else {
         filePath = path.join(__dirname, "404.html");
