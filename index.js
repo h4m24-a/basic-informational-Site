@@ -19,10 +19,12 @@ const server = createServer(async (req, res) => {
         filePath = path.join(__dirname, "about.html");
       } else if (req.url === "/contact-me.html") {
         filePath = path.join(__dirname, "contact-me.html");
-      } else if (req.url === "/style.css") {
+      } else if (req.url === '/style.css') {
         filePath = path.join(__dirname, "style.css");
       } else if (req.url === "/global.css") {
         filePath = path.join(__dirname, "global.css");
+      } else if (req.url === "/app.js") {
+        filePath = path.join(__dirname, "app.js");
       } else {
         filePath = path.join(__dirname, "404.html");
       }
@@ -34,7 +36,7 @@ const server = createServer(async (req, res) => {
       throw new Error("Method not allowed");
     }
   } catch (error) {
-    res.writeHead(500, { "Content-Type": "text/plain" });
+    res.writeHead(500, { "Content-Type": "text/html" });
     res.end("Server Error");
   }
 });

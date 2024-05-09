@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
 
 
 body {
@@ -2218,9 +2220,7 @@ body {
       right: 0;
       bottom: -4rem;
   }
-  #hero-227 .cs-item:nth-of-type(1) {
-      /* makes the first line under the buttons shorter */
-  }
+  
   #hero-227 .cs-item:nth-of-type(1):before {
       height: 39.375rem;
   }
@@ -2502,8 +2502,6 @@ body {
                               
 
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
 .error-container {
   text-align: center;
   font-size: 106px;
