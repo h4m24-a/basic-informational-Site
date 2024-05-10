@@ -17,11 +17,11 @@ const server = createServer(async (req, res) => {
         filePath = path.join(__dirname, "index.html"); // specifiy file path using join method of path module - current directory, enter public folder, load index.html
         res.setHeader("Content-Type", "text/HTML");
 
-      } else if (req.url === "/about.html") {
+      } else if (req.url === "/about") {
         filePath = path.join(__dirname, "about.html");
         res.setHeader("Content-Type", "text/HTML");
 
-      } else if (req.url === "/contact-me.html") {
+      } else if (req.url === "/contact-me") {
         filePath = path.join(__dirname, "contact-me.html");
         res.setHeader("Content-Type", "text/HTML");
 
