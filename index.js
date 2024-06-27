@@ -1,58 +1,58 @@
-import { createServer } from "http";
-import fs from "fs/promises";
-import path from "path";
-const PORT = process.env.PORT;
+const express = require("express"); // Import the Express module
+const app = express(); // Create an instance of an Express application
+const path = require("path");
+const PORT = process.env.PORT || 3000;
 
-// Get current path
-const __dirname = import.meta.dirname; // The current module's directory name
-const __filename = import.meta.filename; // The current module's directory name
-
-
-const server = createServer(async (req, res) => {
-  try {
-    // Check if it's a GET request
-    if (req.method === "GET") {
-      let filePath; // filePath variable is used to determine the path of the file that needs to be served based on the URL requested by the client (req.url).
-      if (req.url === "/") {
-        filePath = path.join(__dirname, "index.html"); // specifiy file path using join method of path module - current directory, enter public folder, load index.html
-        res.setHeader("Content-Type", "text/HTML");
-
-      } else if (req.url === "/about") {
-        filePath = path.join(__dirname, "about.html");
-        res.setHeader("Content-Type", "text/HTML");
-
-      } else if (req.url === "/contact-me") {
-        filePath = path.join(__dirname, "contact-me.html");
-        res.setHeader("Content-Type", "text/HTML");
-
-      } else if (req.url === '/style.css') {
-        filePath = path.join(__dirname, "style.css");
-        res.setHeader('Content-type', 'text/css');
-
-      } else if (req.url === "/global.css") {
-        filePath = path.join(__dirname, "global.css");
-        res.setHeader('Content-type', 'text/css');
-
-      } else if (req.url === "/app.js") {
-        filePath = path.join(__dirname, "app.js");
-        res.setHeader('Content-type', 'text/javascript');
-
-      } else {
-        filePath = path.join(__dirname, "404.html");
-        res.setHeader("Content-Type", "text/HTML");
-      }
-      const data = await fs.readFile(filePath);
-      res.write(data);  // Holds the file data
-      res.end();
-    } else {
-      throw new Error("Method not allowed");
-    }
-  } catch (error) {
-    res.writeHead(500, { "Content-Type": "text/html" });
-    res.end("Server Error");
-  }
+// Define a route that handles GET requests to the root URL ("/")
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public/index.html")); // Send the HTML file as the response
 });
 
-server.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
+app.get("/about", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public/about.html"));
 });
+
+app.get("/contact-me", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public/contact-me.html"));
+});
+
+app.use(express.static(path.join(__dirname, "public"))); // Serve static files (css, js) more efficiently using express.static
+
+
+// Handle 404
+app.get("*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
+});
+
+
+// Start the server and listen on port 3000
+app.listen(PORT, () => {
+  console.log(`Sever is running on port ${PORT}`);
+});
+
+
+
+
+/* 
+Line 2 :  
+- This instance, often called an "app," is an object that represents your web application and provides methods to configure it, handle requests, 
+and define routes.
+- The app variable is a constant that will hold the Express application instance.
+*/
+
+
+
+
+
+
+// app.get("/style.css", (req, res) => {
+//   res.sendFile(path.join(__dirname, "style.css"));
+// });
+
+// app.get("/global.css", (req, res) => {
+//   res.sendFile(path.join(__dirname, "global.css"));
+// });
+
+// app.get("/app.js", (req, res) => {
+//   res.sendFile(path.join(__dirname, "app.js"));
+// });
