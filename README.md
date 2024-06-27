@@ -1,7 +1,4 @@
-# Practicing Node.js
-
-
-### View Project : https://h4m24-a.github.io/basic-informational-Site/
+# Practicing Node.js & Express.js
 
 
 Basic Website practicing Node.js & Express.js:
